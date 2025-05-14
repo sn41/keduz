@@ -19,27 +19,27 @@ CREATE TABLE regions
 
 **Добавим список областей**
 INSERT INTO regions (name, logo_path)
-VALUES ('Астана', 'region_img/astana_city.png'),
-('Алматы', 'region_img/almaty_city.png'),
-('Шымкент', 'region_img/shimkent_city.png'),
-('Абайская область', 'region_img/abay.png'),
-('Акмолинская область', 'region_img/akmola.png'),
-('Актюбинская область', 'region_img/aktobe.png'),
-('Алматинская область', 'region_img/almaty.png'),
-('Атырауская область', 'region_img/atyrau.png'),
-('Восточно-Казахстанская область', 'region_img/east_kazakhstan.png'),
-('Жамбылская область', 'region_img/zhambyl.png'),
-('Жетысуская область', 'region_img/zhetysu.png'),
-('Западно-Казахстанская область', 'region_img/west_kazakhstan.png'),
-('Карагандинская область', 'region_img/karaganda.png'),
-('Костанайская область', 'region_img/kostanay.png'),
-('Кызылординская область', 'region_img/kyzylorda.png'),
-('Мангистауская область', 'region_img/mangistau.png'),
-('Павлодарская область', 'region_img/pavlodar.png'),
-('Северо-Казахстанская область', 'region_img/north_kazakhstan.png'),
-('Туркестанская область', 'region_img/turkestan.png'),
-('Улытауская область', 'region_img/ulytau.png'),
-('Город республиканского значения область', 'region_img/city.png');
+VALUES ('Астана', 'img/regions/astana_city.png'),
+('Алматы', 'img/regions/almaty_city.png'),
+('Шымкент', 'img/regions/shimkent_city.png'),
+('Абайская область', 'img/regions/abay.png'),
+('Акмолинская область', 'img/regions/akmola.png'),
+('Актюбинская область', 'img/regions/aktobe.png'),
+('Алматинская область', 'img/regions/almaty.png'),
+('Атырауская область', 'img/regions/atyrau.png'),
+('Восточно-Казахстанская область', 'img/regions/east_kazakhstan.png'),
+('Жамбылская область', 'img/regions/zhambyl.png'),
+('Жетысуская область', 'img/regions/zhetysu.png'),
+('Западно-Казахстанская область', 'img/regions/west_kazakhstan.png'),
+('Карагандинская область', 'img/regions/karaganda.png'),
+('Костанайская область', 'img/regions/kostanay.png'),
+('Кызылординская область', 'img/regions/kyzylorda.png'),
+('Мангистауская область', 'img/regions/mangistau.png'),
+('Павлодарская область', 'img/regions/pavlodar.png'),
+('Северо-Казахстанская область', 'img/regions/north_kazakhstan.png'),
+('Туркестанская область', 'img/regions/turkestan.png'),
+('Улытауская область', 'img/regions/ulytau.png'),
+('Город республиканского значения область', 'img/regions/city.png');
 
 
 **Изменим код сервера, чтобы получить теперь список областей**

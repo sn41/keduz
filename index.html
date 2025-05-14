@@ -9,14 +9,22 @@
 <!--body - тег тела страницы-->
 <body>
 
-<!--кнопка для запроса данных, onclick - атрибут, который будет вызывать функцию fetchData -->
-    <button onclick="fetchData()">Загрузить список</button>
+<!-- (-- step4) кнопка для запроса данных, onclick - атрибут, который будет вызывать функцию fetchData -->
+<!--    <button onclick="fetchData()">Загрузить список</button>-->
 
-<!--    таблица для отображения списка строк, полученных от сервера из базы данных, она будет заполняться функцией fetchData-->
-    <ul id="dataList"></ul>
+<!--  (++ step4) step4: переименуем кнопку, а слушатель добавим в скрипте-->
+<button id="regionsBtn">Регионы</button>
+
+<!--  (-- step4) таблица для отображения списка строк, полученных от сервера из базы данных, она будет заполняться функцией fetchData-->
+<!--    <ul id="dataList"></ul>-->
+
+<!--  (++ step4) используем фрейм для отображения списка строк у него id="contentFrame"-->
+<div class="content-frame" id="contentFrame">
+    <!-- Content will be loaded here -->
+</div>
 
 <!--    скрипт обработки страницы, он поместит запрос в таблицу dataList-->
-    <script src="main.js"></script>
+<script src="main.js"></script>
 
 </body>
 </html>
