@@ -12,7 +12,9 @@ try {
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
     ]);
 
-    $sql = "SELECT * FROM items";
+//    $sql = "SELECT * FROM items";
+    $sql = "SELECT * FROM regions";
+
     $stmt = $pdo->prepare($sql);
     $stmt->execute();
 
@@ -26,6 +28,5 @@ try {
 
 } catch (PDOException $e) {
     echo json_encode(["error" => "Ошибка подключения: " . $e->getMessage()]);
-
 }
 ?>
