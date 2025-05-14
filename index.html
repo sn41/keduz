@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Запрос данных</title>
+    <script>
+        function fetchData() {
+            fetch('server.php')
+                .then(response => response.json())
+                .then(data => {
+                    const list = document.getElementById("dataList");
+                    list.innerHTML = "";
+                    if (Array.isArray(data)) {
+                        data.forEach(item => {
+                            const li = document.createElement("li");
+                            li.textContent = item.name;
+                            list.appendChild(li);
+                        });
+                    } else {
+                        console.error("Ошибка: Ожидался массив, но получен объект.", data);
+                    }
+                })
+                .catch(error => console.error("Ошибка:", error));
+        }
+    </script>
+</head>
+<body>
+<button onclick="fetchData()">Загрузить список</button>
+<ul id="dataList"></ul>
+</body>
+</html>
